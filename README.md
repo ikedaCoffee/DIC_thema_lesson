@@ -167,3 +167,6 @@ $ git pull origin develop
 ```
 
 を実行しましょう。
+
+
+Joinしました!
