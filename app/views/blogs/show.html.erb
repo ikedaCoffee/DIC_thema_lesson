@@ -1,19 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
 
+<p id="notice"><%= notice %></p>
 <p>
-  <strong>Title:</strong>
+  <strong>タイトル:</strong>
   <%= @blog.title %>
 </p>
 
 <p>
-  <strong>Content:</strong>
+  <strong>コンテンツ:</strong>
   <%= @blog.content %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>ユーザー:</strong>
   <%= @blog.user.name %>
 </p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<%= link_to '編集', edit_blog_path(@blog), class: 'btn btn-default'%>
+<%= link_to '戻る', blogs_path, class: 'btn btn-default'%>
+
+</div>
+</div>
+</div>
