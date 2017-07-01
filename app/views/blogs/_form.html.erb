@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label "タイトル" %><br>
+    <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_field :content %>
+    <%= f.label "内容" %><br>
+    <%= f.text_field :content, class: 'form-control' %>
   </div>
   <!-- <div class="field">
     <%= f.label :user_id %><br>
     <%= f.text_field :user_id %>
   </div> -->
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
   </div>
 <% end %>
